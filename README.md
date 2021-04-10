@@ -64,5 +64,13 @@ The files, for the most part are pretty self explanatory:
 - **constants.py** is basically 1 dictionary for operators and their precedence and 1 list for the different expression types
 - **main.py** this is the one you want to run
 
+</br>
+
+## Disclaimer
+- If a valid input is entered then the code will work as intended
+- However it has not been made to be able to handle all types of inputs
+- So you can probably break it by entering invalid inputs
+
+
 </br></br>
-Knock yourself out with the code and Enjoy 😏
+But hey, knock yourself out with the code and Enjoy 😏
