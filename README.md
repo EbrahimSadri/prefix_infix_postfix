@@ -1,6 +1,7 @@
 # prefix_infix_postfix
 Converts between prefix, infix and postfix expressions and evaluates them
 
+</br>
 
 ## Conversion
 The coversion is done through 3 functions
@@ -20,18 +21,23 @@ Prefix -> Postfix -> Infix -> Prefix
 ### postfix expression to infix expression
  1. Passes throught the expression left to right
  2. if the character is an alphabet or a number: 
-         -  appended to operand list
-    else if character is an operator: 
-         -  then takes the last 2 elements in the operand list and combines with operator and bracets
-         -  saves it in a temporary variable and then pops the last two elements in the list
-         -  then appends the temporary variable into the operand list and resets temporary variable
-         eg: 
-            - list = [ ... , A, B], character = + 
-            - temp = ( A + B ), list = [ ... ]
-            - list = [ ... , ( A + B ) ], temp = ""
+    - appended to operand list
+ 3. else if character is an operator: 
+    - then takes the last 2 elements in the operand list and combines with operator and bracets
+    - saves it in a temporary variable and then pops the last two elements in the list
+    - then appends the temporary variable into the operand list and resets temporary variable
+    - eg: 
+      - list = [ ... , A, B], character = + 
+      - temp = ( A + B ), list = [ ... ]
+      - list = [ ... , ( A + B ) ], temp = ""
  
 ### infix expression to prefix expression
 just refer to this [youtube video](https://www.youtube.com/watch?v=8QxlrRws9OI)
+
+
+</br>
+</br>
+
 
 ## Evaluation
 Evaluation is done through using "eval()" on an infix expression. 
