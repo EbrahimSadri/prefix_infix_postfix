@@ -12,7 +12,7 @@ The coversion is done through 3 functions
 Prefix -> Postfix -> Infix -> Prefix
 
 ### prefix expression to postfix expression
- 1. Recursively loops through expression which is converted to a list using ".split()" based on spaces
+ 1. Recursively loops through expression which is converted to a list using ***.split()*** based on spaces
  2. Looks for an element which is an operator followed by two consecutive elements which are operands
  3. Swaps elements around so that operator is at the end from "+ A B" to "A B +"
  4. Swaped segment is merged to beomce a single list element
@@ -40,6 +40,17 @@ just refer to this [youtube video](https://www.youtube.com/watch?v=8QxlrRws9OI)
 
 
 ## Evaluation
-Evaluation is done through using "eval()" on an infix expression. 
+Evaluation is done through using ***eval()*** on an infix expression. 
 So any expression is first converted to an infix expression then evaluated.
 
+
+</br>
+</br>
+
+## Files
+The files are pretty self explanatory: 
+- **input_handler.py** handles inputs
+- **evaluation_handler.py** handles evaluation
+and so on... 
+
+Knock yourself out with the code
