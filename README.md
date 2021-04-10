@@ -3,6 +3,14 @@ Converts between prefix, infix and postfix expressions and evaluates them
 
 </br>
 
+## How to Use
+- Pretty striaght forawrd, you don't need any libraries or any dependancies (I think, LOL). 
+- Just have all the files in a single directory
+- and just RUN **main.py**
+```python main.py```
+
+</br>
+
 ## Conversion
 The coversion is done through 3 functions
  - prefix expression to postfix expression
@@ -12,7 +20,7 @@ The coversion is done through 3 functions
 Prefix -> Postfix -> Infix -> Prefix
 
 ### prefix expression to postfix expression
- 1. Recursively loops through expression which is converted to a list using ***.split()*** based on spaces
+ 1. Recursively loops through expression which is converted to a list using ```.split()``` based on spaces
  2. Looks for an element which is an operator followed by two consecutive elements which are operands
  3. Swaps elements around so that operator is at the end from "+ A B" to "A B +"
  4. Swaped segment is merged to beomce a single list element
@@ -40,7 +48,7 @@ just refer to this [youtube video](https://www.youtube.com/watch?v=8QxlrRws9OI)
 
 
 ## Evaluation
-Evaluation is done through using ***eval()*** on an infix expression. 
+Evaluation is done through using ```eval()``` on an infix expression. 
 So any expression is first converted to an infix expression then evaluated.
 
 
@@ -48,9 +56,13 @@ So any expression is first converted to an infix expression then evaluated.
 </br>
 
 ## Files
-The files are pretty self explanatory: 
+The files, for the most part are pretty self explanatory: 
 - **input_handler.py** handles inputs
 - **evaluation_handler.py** handles evaluation
-and so on... 
+- **conversion_handler.py** handles conversions between formats
+- **menu_handler.py** handles the menu that is displayed in the console that asks user to choose what to do
+- **constants.py** is basically 1 dictionary for operators and their precedence and 1 list for the different expression types
+- **main.py** this is the one you want to run
 
-Knock yourself out with the code
+</br></br>
+Knock yourself out with the code and Enjoy 😏
