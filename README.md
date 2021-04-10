@@ -19,10 +19,10 @@ Prefix -> Postfix -> Infix -> Prefix
  5. setps 1 - 4 are repeated until the list becomes a single element
  
 ### postfix expression to infix expression
- 1. Passes throught the expression left to right
- 2. if the character is an alphabet or a number: 
+ - Passes throught the expression left to right
+ - if the character is an alphabet or a number: 
     - appended to operand list
- 3. else if character is an operator: 
+ - else if character is an operator: 
     - then takes the last 2 elements in the operand list and combines with operator and bracets
     - saves it in a temporary variable and then pops the last two elements in the list
     - then appends the temporary variable into the operand list and resets temporary variable
